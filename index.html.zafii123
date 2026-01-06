@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Zafii Uniform Garments</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{margin:0;font-family:Arial;background:#f1f5f9;}
+header{background:#102a43;color:#fff;padding:20px;text-align:center;}
+nav{background:#2563eb;padding:10px;text-align:center;}
+nav a{color:#fff;margin:10px;text-decoration:none;font-weight:bold;}
+.banner{background:#fde68a;padding:10px;text-align:center;font-weight:bold;}
+.search{padding:15px;text-align:center;}
+input{padding:8px;width:70%;max-width:300px;}
+.products{padding:15px;}
+.card{background:#fff;padding:15px;margin:10px;border-radius:10px;}
+.btn{background:#2563eb;color:white;padding:6px 12px;text-decoration:none;border-radius:15px;}
+footer{background:#102a43;color:#fff;padding:15px;text-align:center;}
+</style>
+
+<script>
+function searchProduct(){
+let input=document.getElementById("search").value.toLowerCase();
+let cards=document.getElementsByClassName("card");
+for(let i=0;i<cards.length;i++){
+ let text=cards[i].innerText.toLowerCase();
+ cards[i].style.display=text.includes(input)?"block":"none";
+}
+}
+</script>
+</head>
+<body>
+
+<header>
+<h1>Zafii Uniform Garments</h1>
+<p>School & College Uniforms</p>
+</header>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="gallery.html">Gallery</a>
+<a href="admin.html">Admin</a>
+</nav>
+
+<div class="banner">🎉 Winter Sale – Flat 20% OFF 🎉</div>
+
+<div class="search">
+<input id="search" onkeyup="searchProduct()" placeholder="Search uniform...">
+</div>
+
+<div class="products">
+<div class="card">Boys School Shirt – Rs 750</div>
+<div class="card">Girls School Shirt – Rs 700</div>
+<div class="card">School Trousers – Rs 800</div>
+<div class="card">College Shirt – Rs 900</div>
+<div class="card">College Trousers – Rs 1300</div>
+<div class="card">Blazer – Rs 2000</div>
+</div>
+
+<footer>
+<p>© 2026 Zafii Uniform Garments</p>
+</footer>
+
+</body>
+</html>
