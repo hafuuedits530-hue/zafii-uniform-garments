@@ -1,5 +1,3 @@
-# zafii-uniform-garments
-All School &amp; Colleges uniform available 
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,6 +17,7 @@ All School &amp; Colleges uniform available
 <body>
 
 <header>
+    <img src="logo.png" style="width:120px;">
     <h1>Zafii Uniform Garments</h1>
     <p>School & College Uniform Specialists</p>
 </header>
@@ -26,24 +25,45 @@ All School &amp; Colleges uniform available
 <div class="hero">
     <h2>Quality School & College Uniforms</h2>
     <p>All sizes available • Best stitching • Affordable prices</p>
-    <a class="btn" href="https://wa.me/923357500634">Order on WhatsApp</a>
+    <a class="btn" href="https://wa.me/923704452235">Order on WhatsApp</a>
 </div>
 
 <div class="section">
     <h2>Our Uniforms</h2>
 
-    <div class="card">Boys School Shirt – Rs 750</div>
-    <div class="card">Girls School Shirt – Rs 700</div>
-    <div class="card">School Trousers – Rs 800</div>
-    <div class="card">College Shirt – Rs 900</div>
-    <div class="card">College Trousers – Rs 1300</div>
-    <div class="card">Blazer – Rs 600</div>
+    <div class="card">
+Boys School Shirt – Rs 750 <br>
+<a class="btn" href="https://wa.me/923704452235?text=I%20want%20to%20order%20Boys%20School%20Shirt%20Rs%20750">Order on WhatsApp</a>
+</div>
 
+<div class="card">
+Girls School Shirt – Rs 700 <br>
+<a class="btn" href="https://wa.me/923704452235?text=I%20want%20to%20order%20Girls%20School%20Shirt%20Rs%20700">Order on WhatsApp</a>
+</div>
+
+<div class="card">
+School Trousers – Rs 800 <br>
+<a class="btn" href="https://wa.me/923704452235?text=I%20want%20to%20order%20School%20Trousers%20Rs%20800">Order on WhatsApp</a>
+</div>
+
+<div class="card">
+College Shirt – Rs 900 <br>
+<a class="btn" href="https://wa.me/923704452235?text=I%20want%20to%20order%20College%20Shirt%20Rs%20900">Order on WhatsApp</a>
+</div>
+
+<div class="card">
+College Trousers – Rs 1300 <br>
+<a class="btn" href="https://wa.me/923704452235?text=I%20want%20to%20order%20College%20Trousers%20Rs%201300">Order on WhatsApp</a>
+</div>
+
+<div class="card">
+Blazer – Rs 2000 <br>
+<a class="btn" href="https://wa.me/923704452235?text=I%20want%20to%20order%20Blazer%20Rs%20600">Order on WhatsApp</a>
 </div>
 
 <div class="section">
     <h2>Contact Us</h2>
-    <p><strong>WhatsApp:</strong> +92 335 7500634</p>
+    <p><strong>WhatsApp:</strong> +923704452235</p>
     <p><strong>Shop Address:</strong> New Anarkali Bazar, Karnal Plaza, Lahore</p>
 </div>
 
