@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Zafii Uniform Garments</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:linear-gradient(#e8f1ff,#ffffff);
+}
+.header{
+  background:linear-gradient(135deg,#1d4ed8,#2563eb);
+  color:white;
+  padding:30px 15px;
+  text-align:center;
+  border-bottom-left-radius:40px;
+  border-bottom-right-radius:40px;
+}
+.header img{width:120px;border-radius:12px;}
+.section{
+  margin:20px;
+  padding:20px;
+  border-radius:20px;
+}
+.about{background:#ecfeff;}
+.products{background:#fef9c3;}
+.p-card{
+  background:white;
+  padding:15px;
+  border-radius:15px;
+  margin-bottom:15px;
+  box-shadow:0 4px 8px rgba(0,0,0,0.1);
+}
+.p-card img{width:100%;border-radius:10px;}
+.size{
+  width:100%;
+  padding:7px;
+  margin:6px 0;
+  border-radius:8px;
+}
+.btn{
+  width:100%;
+  background:#2563eb;
+  color:white;
+  padding:10px;
+  border:none;
+  border-radius:25px;
+  font-size:16px;
+}
+.footer{
+  background:#020617;
+  color:white;
+  padding:15px;
+  text-align:center;
+  border-top-left-radius:40px;
+  border-top-right-radius:40px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+  <img src="logo.png">
+  <h1>Zafii Uniform Garments</h1>
+  <p>School & College Uniform Specialists</p>
+</div>
+
+<div class="section about">
+<h2>Quality Uniforms at Best Prices</h2>
+<p>All sizes available • Best stitching • Fast WhatsApp Orders</p>
+</div>
+
+<div class="section products">
+<h2>Our Products</h2>
+
+<div class="p-card">
+<img src="shirt.jpg">
+<h3>Boys School Shirt</h3>
+<p>Price: Rs 750</p>
+<select class="size">
+<option disabled selected>Select Size</option>
+<option>22</option><option>24</option><option>26</option><option>28</option>
+<option>30</option><option>32</option><option>34</option><option>36</option>
+<option>38</option><option>40</option>
+</select>
+<button class="btn" onclick="order('Boys School Shirt',750,this)">Order Now</button>
+</div>
+
+<div class="p-card">
+<img src="girls-shirt.jpg">
+<h3>Girls School Shirt</h3>
+<p>Price: Rs 700</p>
+<select class="size">
+<option disabled selected>Select Size</option>
+<option>22</option><option>24</option><option>26</option><option>28</option>
+<option>30</option><option>32</option><option>34</option><option>36</option>
+<option>38</option><option>40</option>
+</select>
+<button class="btn" onclick="order('Girls School Shirt',700,this)">Order Now</button>
+</div>
+
+<div class="p-card">
+<img src="trouser.jpg">
+<h3>School Trouser</h3>
+<p>Price: Rs 800</p>
+<select class="size">
+<option disabled selected>Select Size</option>
+<option>22</option><option>24</option><option>26</option><option>28</option>
+<option>30</option><option>32</option><option>34</option><option>36</option>
+<option>38</option><option>40</option>
+</select>
+<button class="btn" onclick="order('School Trouser',800,this)">Order Now</button>
+</div>
+
+<div class="p-card">
+<img src="blazer.jpg">
+<h3>College Blazer</h3>
+<p>Price: Rs 2000</p>
+<select class="size">
+<option disabled selected>Select Size</option>
+<option>30</option><option>32</option><option>34</option>
+<option>36</option><option>38</option><option>40</option><option>42</option>
+</select>
+<button class="btn" onclick="order('College Blazer',2000,this)">Order Now</button>
+</div>
+
+</div>
+
+<div class="footer">
+<p>Owner: Muhammad Huzaifa Asghar</p>
+<p>Web Designer=Hafiz Ali Sher</p>
+<p>WhatsApp Orders: 0370-4452235</p>
+</div>
+
+<script>
+function order(item,price,btn){
+  let size = btn.parentElement.querySelector('.size').value;
+  if(size=="Select Size"){
+    alert("Please select size");
+    return;
+  }
+  let msg = `I want to order ${item}\nPrice: Rs ${price}\nSize: ${size}`;
+  window.location.href = "https://wa.me/923704452235?text="+encodeURIComponent(msg);
+}
+</script>
+
+</body>
+</html>
