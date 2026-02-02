@@ -126,20 +126,35 @@ section{padding:60px 40px}
 
 ul{list-style:none}
 
-.gallery{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-  gap:15px;
+/* ===== Modern Gallery ===== */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
 }
 
-.gallery img{width:100%;border-radius:12px}
+.gallery img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
 
-form input, form textarea{
-  width:100%;
-  padding:12px;
-  margin-bottom:10px;
-  border-radius:8px;
-  border:1px solid #ccc;
+.gallery img:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 20px 35px rgba(0,0,0,0.25);
+}
+
+/* Mobile friendly */
+@media (max-width: 600px) {
+  .gallery img {
+    height: 200px;
+  }
+}
+
 }
 
 footer{
@@ -277,12 +292,27 @@ and consistent sizing. We proudly support schools with reliable bulk supply and 
 </ul>
 </div>
 </section>
-
 <section class="gallery">
-<img src="https://images.unsplash.com/photo-1593032465171-fb5f0f0e76c3">
-<img src="https://images.unsplash.com/photo-1521335629791-ce4aec67ddaf">
-<img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c">
+  <img src="https://images.unsplash.com/photo-1600056781444-52a3c6b6c77b?auto=format&fit=crop&w=800&q=80" 
+       alt="Children Wearing School Uniform">
+
+  <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=800&q=80" 
+       alt="Students in School Uniform">
+
+  <img src="https://images.unsplash.com/photo-1600180758890-6b94519a8ba6?auto=format&fit=crop&w=800&q=80" 
+       alt="School Boys Uniform">
+
+  <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=800&q=80" 
+       alt="Adult Staff Uniform">
+
+  <img src="https://images.unsplash.com/photo-1593032465171-fb5f0f0e76c3?auto=format&fit=crop&w=800&q=80" 
+       alt="Professional Uniform Manufacturing">
+
+  <img src="https://images.unsplash.com/photo-1521335629791-ce4aec67ddaf?auto=format&fit=crop&w=800&q=80" 
+       alt="Uniform Design and Stitching">
 </section>
+
+
 
 <section id="contact">
 <div class="container">
