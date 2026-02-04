@@ -70,6 +70,65 @@ nav h2 {
       font-size: 14px;
       font-weight: 500;
     }
+/* ===== HEADER FIXED & CLEAN ===== */
+.site-header {
+  background: #0b2c4d;
+  position: sticky;
+  top: 0;
+  z-index: 2000;
+}
+
+.nav-bar {
+  max-width: 1200px;
+  margin: auto;
+  padding: 14px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* Nav Links */
+.nav-links {
+  display: flex;
+  gap: 18px;
+}
+
+.nav-links a {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #25D366;
+}
+
+/* ===== MOBILE HEADER ===== */
+@media (max-width: 768px) {
+  .nav-bar {
+    padding: 10px 14px;
+  }
+
+  .logo {
+    font-size: 16px;
+  }
+
+  .nav-links {
+    gap: 10px;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+  }
+}
 
 /* ===== HERO SECTION ===== */
 .hero {
@@ -346,18 +405,20 @@ nav h2 {
 <body>
 
   <!-- ===== Header / Navigation ===== -->
-  <header>
-    <nav>
-      <h2>Zafii Uniform Garments</h2>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#sizes">Sizes</a></li>
-        <li><a href="#schools">Schools</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+<header class="site-header">
+  <nav class="nav-bar">
+    <div class="logo">Zafii Uniform Garments</div>
+
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#sizes">Sizes</a></li>
+      <li><a href="#schools">Schools</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
 
   <!-- ===== Hero ===== -->
   <section class="hero">
