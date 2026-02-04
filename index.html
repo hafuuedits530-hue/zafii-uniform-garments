@@ -26,10 +26,10 @@
     }
 
     body {
-      background: #f4f7fb;
+  background: linear-gradient(180deg, #eef2f7, #e3e8ee);
   color: #2c2c2c;
-      line-height: 1.6;
-    }
+}
+
 
     a {
       text-decoration: none;
@@ -70,7 +70,16 @@ nav h2 {
       color: #fff;
       font-size: 14px;
       font-weight: 500;
-    }
+    } header {
+  background: linear-gradient(135deg, #0b2c4d, #123d6a);
+}
+nav h2 {
+  color: #f5c16c; /* GOLD LOGO TEXT */
+}
+nav a:hover {
+  color: #f5c16c;
+}
+
 /* ===== HEADER FIXED & CLEAN ===== */
 .site-header {
   background: #0b2c4d;
@@ -139,13 +148,10 @@ section {
 
 /* ===== HERO SECTION ===== */
 .hero {
-  height: 85vh;
   background:
-    linear-gradient(
-      rgba(0, 0, 0, 0.8),
-      rgba(0, 0, 0, 0.8)
-    ),
-    url("https://images.unsplash.com/photo-1600508774634-4e11d34730e2") center center / cover no-repeat;
+    linear-gradient(rgba(11,44,77,0.85), rgba(11,44,77,0.85)),
+    url("https://images.unsplash.com/photo-1600508774634-4e11d34730e2?auto=format&fit=crop&w=1600&q=80")
+    center/cover no-repeat;
 
   display: flex;
   align-items: center;
@@ -174,6 +180,12 @@ section {
   font-size: 1.3rem;
   color: #f1f1f1;
   line-height: 1.6;
+}
+.hero-content h1 {
+  color: #f5c16c;
+}
+.hero-content p {
+  color: #ffffff;
 }
 
 /* 🔹 MOBILE RESPONSIVE */
@@ -342,6 +354,14 @@ form .btn {
     padding: 10px 22px;
   }
 }
+.btn, hero-btn {
+  background: linear-gradient(135deg, #f5c16c, #e0a84f);
+  color: #0b2c4d;
+  font-weight: 700;
+}
+.btn:hover {
+  background: linear-gradient(135deg, #e0a84f, #f5c16c);
+}
 
     /* ===== Cards ===== */
     .cards {
@@ -367,6 +387,15 @@ form .btn {
     .card p {
       margin-bottom: 10px;
     }
+section {
+  background: rgba(255,255,255,0.9);
+  border-radius: 20px;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.08);
+}
+.card {
+  background: linear-gradient(180deg, #ffffff, #f3f6fa);
+  border-left: 5px solid #f5c16c;
+}
 
     /* ===== Gallery ===== */
     .gallery {
@@ -535,6 +564,17 @@ form .btn {
 p {
   line-height: 1.8;
   color: #444;
+}
+#schools {
+  background: linear-gradient(135deg, #0b2c4d, #102a43);
+}
+#schools h2,
+#schools .card {
+  color: #ffffff;
+}
+.site-footer {
+  background: #0b2c4d;
+  color: #f5c16c;
 }
 
   </style>
