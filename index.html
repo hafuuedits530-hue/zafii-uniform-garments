@@ -73,18 +73,56 @@ nav h2 {
 
 /* ===== HERO SECTION ===== */
 .hero {
-  min-height: 80vh;
+  height: 85vh;
   background:
-    linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
-    url("https://images.unsplash.com/photo-1600508774634-4e11d34730e2?auto=format&fit=crop&w=1600&q=80")
-    center center / cover no-repeat;
+    linear-gradient(
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url("https://images.unsplash.com/photo-1600508774634-4e11d34730e2") center center / cover no-repeat;
 
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+.hero-content {
+  max-width: 900px;
   padding: 20px;
 }
+
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  color: #f1f1f1;
+  line-height: 1.6;
+}
+
+/* 🔹 MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  .hero {
+    height: 65vh;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+  }
+}
+
 
 /* Hero Text */
 .hero-content h1 {
@@ -323,12 +361,12 @@ nav h2 {
 
   <!-- ===== Hero ===== -->
   <section class="hero">
-    <div>
-      <h1>Quality School Uniform Manufacturer</h1>
-      <p>Trusted Supplier of School & College Uniforms in Lahore</p>
-      <a href="#contact" class="btn">Get a Quote</a>
-    </div>
-  </section>
+  <div class="hero-content">
+    <h1>ZAFII UNIFORM GARMENTS</h1>
+    <p>Premium Quality School, College & Corporate Uniforms</p>
+  </div>
+</section>
+
 
   <!-- ===== About Us ===== -->
   <section id="about">
